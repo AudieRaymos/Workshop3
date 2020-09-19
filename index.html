@@ -15,6 +15,10 @@
             let correct = false;  
             const targetIndex = Math.floor(Math.random() * COLOR_ARRAY.length)
             const target = COLOR_ARRAY[targetIndex]
+            do {
+               guess = prompt('I am thinking of one of these colors:\n\n' + COLORS_ARRAY +
+'What color am I thinking of?\n') 
+            } while (!correct)
         }
         function checkGuess(guess, target){
             let correct = false;
